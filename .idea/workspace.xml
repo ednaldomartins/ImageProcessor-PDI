@@ -2,24 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e15bc31f-c648-48a2-8e84-5f0acb663c01" name="Default Changelist" comment="Commit inicial.">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2019-1_Trabalho-1.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ImageProcessor.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagens/CNN1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagens/IMG_0103.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagens/lena256color.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagens/testpat.1k.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ImageProcessor/META-INF/ImageProcessor.kotlin_module" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ImageProcessor/MainKt.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ImageProcessor/data/ImageData.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/ImageData.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignote" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019-1_Trabalho-1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageProcessor.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imagens/CNN1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imagens/IMG_0103.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imagens/lena256color.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imagens/testpat.1k.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.kt" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,14 +40,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/data/ImageData.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+            <state relative-caret-position="150">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
               <folding>
                 <element signature="e#14#62#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="2" selection-start-column="2" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -72,6 +79,8 @@
         <option value="$PROJECT_DIR$/src/Main.kt" />
         <option value="$PROJECT_DIR$/src/data/ImageIO.kt" />
         <option value="$PROJECT_DIR$/src/data/ImageData.kt" />
+        <option value="$PROJECT_DIR$/.gitignote" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -99,6 +108,11 @@
               <item name="ImageProcessor" type="b2602c69:ProjectViewProjectNode" />
               <item name="ImageProcessor" type="462c0819:PsiDirectoryNode" />
               <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ImageProcessor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ImageProcessor" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ImageProcessor" type="b2602c69:ProjectViewProjectNode" />
@@ -178,7 +192,42 @@
       <option name="project" value="LOCAL" />
       <updated>1563384481512</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="IDE.">
+      <created>1563384717875</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1563384717875</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Imagens propostas para usar no projeto.">
+      <created>1563384756515</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1563384756515</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Descrição do trabalho.">
+      <created>1563384784675</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1563384784675</updated>
+    </task>
+    <task id="LOCAL-00006" summary="IDE.">
+      <created>1563384825570</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1563384825570</updated>
+    </task>
+    <task id="LOCAL-00007" summary="ignore.">
+      <created>1563385546190</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1563385546190</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -218,7 +267,11 @@
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
     <MESSAGE value="Commit inicial." />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit inicial." />
+    <MESSAGE value="Imagens propostas para usar no projeto." />
+    <MESSAGE value="Descrição do trabalho." />
+    <MESSAGE value="IDE." />
+    <MESSAGE value="ignore." />
+    <option name="LAST_COMMIT_MESSAGE" value="ignore." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Main.kt">
@@ -231,13 +284,30 @@
     <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/ImageProcessor.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignote">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/data/ImageData.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        <state relative-caret-position="150">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
           <folding>
             <element signature="e#14#62#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="2" selection-start-column="2" selection-end-column="2" />
         </state>
       </provider>
     </entry>
