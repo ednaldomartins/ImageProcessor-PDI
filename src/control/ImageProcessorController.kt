@@ -1,6 +1,7 @@
 package control
 
 import data.ImageData
+import model.ExtensionFilter
 import model.Filter
 import util.Matriz
 import java.awt.image.BufferedImage
@@ -13,7 +14,11 @@ class ImageProcessorController {
     lateinit var bufferedImage: BufferedImage
 
     fun processImage (filter: Filter) {
-        filter.filtrate(bufferedImage, Matriz().criarMatrizSemExtensaoPorZeros(bufferedImage.width, bufferedImage.height))
+        filter.filtrate(bufferedImage)
+    }
+
+    fun processImage (filter: ExtensionFilter, matriz: Matriz) {
+        filter.filtrate(bufferedImage, matriz.criarMatrizSemExtensaoPorZeros(bufferedImage.width, bufferedImage.height))
     }
 
     fun loadImage(path: String) {
