@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e15bc31f-c648-48a2-8e84-5f0acb663c01" name="Default Changelist" comment="Criação das classes Pixel e Imagem.">
-      <change afterPath="$PROJECT_DIR$/src/model/GreenFilter.kt" afterDir="false" />
+    <list default="true" id="e15bc31f-c648-48a2-8e84-5f0acb663c01" name="Default Changelist" comment="adição do fi">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/control/ImageProcessorController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/control/ImageProcessorController.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/ImageJFrame.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/ImageJFrame.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -22,38 +22,59 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            <state relative-caret-position="105">
+              <caret line="7" column="74" lean-forward="true" selection-start-line="7" selection-start-column="74" selection-end-line="7" selection-end-column="74" />
               <folding>
-                <element signature="e#0#86#0" expanded="true" />
+                <element signature="e#0#119#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/data/ImageData.kt">
+        <entry file="file://$PROJECT_DIR$/src/control/ImageProcessorController.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="8" column="117" selection-start-line="8" selection-start-column="117" selection-end-line="8" selection-end-column="117" />
+            <state relative-caret-position="225">
+              <caret line="19" column="48" lean-forward="true" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/model/Pixel.kt">
+        <entry file="file://$PROJECT_DIR$/src/util/Matrix.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+            <state relative-caret-position="272">
+              <caret line="20" column="57" lean-forward="true" selection-start-line="20" selection-start-column="57" selection-end-line="20" selection-end-column="57" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/model/AverageFilter.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/ExtensionFilter.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/GreenFilter.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="26" column="79" selection-start-line="26" selection-start-column="79" selection-end-line="26" selection-end-column="79" />
+            <state relative-caret-position="240">
+              <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="17" selection-end-column="43" />
               <folding>
                 <element signature="e#15#72#0" expanded="true" />
               </folding>
@@ -64,35 +85,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/Filter.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/model/Imagem.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="13" selection-start-column="13" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/view/ImageJFrame.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/control/ImageProcessorController.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="10" selection-end-column="117" />
+            <state relative-caret-position="75">
+              <caret line="5" column="45" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -103,23 +97,26 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
-        <option value="Kotlin File" />
         <option value="Kotlin Interface" />
         <option value="Kotlin Class" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>t</find>
-      <find>t</find>
       <find>imagemEditavel</find>
+      <find>red</find>
+      <find>blue</find>
     </findStrings>
     <replaceStrings>
       <replace>imagemEditavel</replace>
       <replace>vetorDaImagem</replace>
-      <replace>imagemEditavel</replace>
       <replace>escritorDaImagem</replace>
+      <replace>green</replace>
+      <replace>blue</replace>
+      <replace>alpha</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -131,27 +128,38 @@
         <option value="$PROJECT_DIR$/src/data/ImageIO.kt" />
         <option value="$PROJECT_DIR$/.gitignote" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/model/Pixel.kt" />
         <option value="$PROJECT_DIR$/src/model/PixelsTeste.java" />
         <option value="$PROJECT_DIR$/src/model/Matriz.java" />
-        <option value="$PROJECT_DIR$/src/util/Matriz.java" />
         <option value="$PROJECT_DIR$/src/model/Image.kt" />
         <option value="$PROJECT_DIR$/src/model/Imagem.kt" />
         <option value="$PROJECT_DIR$/src/view/JFrameImagem.kt" />
         <option value="$PROJECT_DIR$/src/data/ImageData.kt" />
         <option value="$PROJECT_DIR$/src/model/Filtro.kt" />
-        <option value="$PROJECT_DIR$/src/Main.kt" />
-        <option value="$PROJECT_DIR$/src/control/ImageProcessorController.kt" />
-        <option value="$PROJECT_DIR$/src/model/Filter.kt" />
         <option value="$PROJECT_DIR$/src/view/ImageJFrame.kt" />
+        <option value="$PROJECT_DIR$/src/model/Filter.kt" />
+        <option value="$PROJECT_DIR$/src/model/RedGrayFilter.kt" />
+        <option value="$PROJECT_DIR$/src/model/GreenFilterBlackWhite.kt" />
         <option value="$PROJECT_DIR$/src/model/GreenFilter.kt" />
+        <option value="$PROJECT_DIR$/src/model/RedFilter.kt" />
+        <option value="$PROJECT_DIR$/src/model/RedFilterBlackWhite.kt" />
+        <option value="$PROJECT_DIR$/src/util/Matriz.java" />
+        <option value="$PROJECT_DIR$/src/model/TesteF.kt" />
+        <option value="$PROJECT_DIR$/src/util/Matrix2.kt" />
+        <option value="$PROJECT_DIR$/src/model/Pixel.kt" />
+        <option value="$PROJECT_DIR$/src/model/GaussionFilter.kt" />
+        <option value="$PROJECT_DIR$/src/util/Filters.kt" />
+        <option value="$PROJECT_DIR$/src/Main.kt" />
+        <option value="$PROJECT_DIR$/src/util/Matrix.java" />
+        <option value="$PROJECT_DIR$/src/control/ImageProcessorController.kt" />
+        <option value="$PROJECT_DIR$/src/model/ExtensionFilter.kt" />
+        <option value="$PROJECT_DIR$/src/model/AverageFilter.kt" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="4">
-    <option name="y" value="22" />
-    <option name="width" value="1091" />
-    <option name="height" value="747" />
+    <option name="y" value="20" />
+    <option name="width" value="1281" />
+    <option name="height" value="1060" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -159,7 +167,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -217,15 +224,16 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PetShopVendas" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunDashboard">
@@ -390,14 +398,126 @@
       <option name="project" value="LOCAL" />
       <updated>1563818846910</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Primeiro filtro para testes. O filtro mantém apenas a cor verde contida na imagem.">
+      <created>1563819655595</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1563819655595</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Primeiro teste de filtro.">
+      <created>1563819714265</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1563819714266</updated>
+    </task>
+    <task id="LOCAL-00020" summary="workspace.">
+      <created>1563819730695</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1563819730695</updated>
+    </task>
+    <task id="LOCAL-00021" summary="remoção de pixelArray, pois será usado apenas em filtros com extensão.">
+      <created>1563906605222</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1563906605223</updated>
+    </task>
+    <task id="LOCAL-00022" summary="filtro sem extensão. Então não usaremos arrayPixel como auxiliar.">
+      <created>1563906790494</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1563906790494</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Filtro vermelho.">
+      <created>1563906845970</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1563906845970</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Filtro vermelho em preto e branco.">
+      <created>1563907193715</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1563907193715</updated>
+    </task>
+    <task id="LOCAL-00025" summary="separação do método processImage para executar processor com ou sem extensão.">
+      <created>1563907343313</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1563907343313</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Filtro verde em preto e branco.">
+      <created>1563983555658</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1563983555658</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Interface para filtros com extensão e mascara.">
+      <created>1564003285097</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1564003285097</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Segundo teste.">
+      <created>1564003388571</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1564003388571</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Classe para manipulação de matrizes.">
+      <created>1564087525708</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1564087525710</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Classe renomeada.">
+      <created>1564087562225</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1564087562225</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Correção no tipo do Pixel. Após calcular o novo valor do pixel, devemos manter esse valor como Float dentro da pixelMatrix para não perder decimais quando calcular o pixel vizenho. Apenas a imagem original irá receber o pixel convertido para inteiro.">
+      <created>1564150713925</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1564150713925</updated>
+    </task>
+    <task id="LOCAL-00032" summary="adição da máscara que será usada.">
+      <created>1564150976284</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1564150976284</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Criação do filtro da média.">
+      <created>1564151007852</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1564151007852</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1091" height="747" extended-state="4" />
+    <frame x="0" y="20" width="1281" height="1060" extended-state="4" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26270375" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2384802" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -405,19 +525,19 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49924242" weight="0.329582" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.6356664" visible="true" weight="0.32852563" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.57575756" weight="0.39871383" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.497979" weight="0.32908705" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.62489897" weight="0.3269639" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.7461601" weight="0.39808917" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.36433366" side_tool="true" visible="true" weight="0.32852563" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.502021" side_tool="true" visible="true" weight="0.3269639" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.329582" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.48580697" weight="0.3290461" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.48181084" weight="0.3280255" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.2497979" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Maven" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
@@ -429,10 +549,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="Commit inicial." />
-    <MESSAGE value="Imagens propostas para usar no projeto." />
-    <MESSAGE value="Descrição do trabalho." />
-    <MESSAGE value="IDE." />
     <MESSAGE value="ignore." />
     <MESSAGE value="Criação das classes Pixel e Imagem." />
     <MESSAGE value="Métodos para retornar a matriz A de no tamanho que será usado no processamento de edição da imagem." />
@@ -441,7 +557,24 @@
     <MESSAGE value="att de 20 de julho." />
     <MESSAGE value="Interface para implementação dos filtros." />
     <MESSAGE value="Classe controladora. versão de testes." />
-    <option name="LAST_COMMIT_MESSAGE" value="Classe controladora. versão de testes." />
+    <MESSAGE value="Primeiro filtro para testes. O filtro mantém apenas a cor verde contida na imagem." />
+    <MESSAGE value="Primeiro teste de filtro." />
+    <MESSAGE value="workspace." />
+    <MESSAGE value="remoção de pixelArray, pois será usado apenas em filtros com extensão." />
+    <MESSAGE value="filtro sem extensão. Então não usaremos arrayPixel como auxiliar." />
+    <MESSAGE value="Filtro vermelho." />
+    <MESSAGE value="Filtro vermelho em preto e branco." />
+    <MESSAGE value="separação do método processImage para executar processor com ou sem extensão." />
+    <MESSAGE value="Filtro verde em preto e branco." />
+    <MESSAGE value="Interface para filtros com extensão e mascara." />
+    <MESSAGE value="Segundo teste." />
+    <MESSAGE value="Classe para manipulação de matrizes." />
+    <MESSAGE value="Classe renomeada." />
+    <MESSAGE value="Correção no tipo do Pixel. Após calcular o novo valor do pixel, devemos manter esse valor como Float dentro da pixelMatrix para não perder decimais quando calcular o pixel vizenho. Apenas a imagem original irá receber o pixel convertido para inteiro." />
+    <MESSAGE value="adição da máscara que será usada." />
+    <MESSAGE value="Criação do filtro da média." />
+    <MESSAGE value="Substituição e remoção da variável Matriz." />
+    <option name="LAST_COMMIT_MESSAGE" value="Substituição e remoção da variável Matriz." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -453,13 +586,30 @@
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/data/ImageData.kt</url>
-          <line>10</line>
+          <url>file://$PROJECT_DIR$/src/control/ImageProcessorController.kt</url>
+          <line>20</line>
           <properties />
-          <option name="timeStamp" value="8" />
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/model/AverageFilter.kt</url>
+          <line>18</line>
+          <properties />
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/util/Matrix.java</url>
+          <line>29</line>
+          <properties />
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="JetRunConfigurationType">
+        <watch expression="mask" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
@@ -485,48 +635,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/javax/imageio/ImageIO.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="494" selection-start-line="494" selection-end-line="494" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/java/awt/image/Raster.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6885">
-          <caret line="492" column="22" selection-start-line="492" selection-start-column="22" selection-end-line="492" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/util/Matriz.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
-          <folding>
-            <element signature="e#316#317#0" expanded="true" />
-            <element signature="e#363#364#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#86#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/ImageData.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="8" column="117" selection-start-line="8" selection-start-column="117" selection-end-line="8" selection-end-column="117" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/javax/imageio/ImageIO.class" />
+    <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/java/awt/image/Raster.class" />
     <entry file="file://$PROJECT_DIR$/src/model/Imagem.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -534,41 +644,121 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Filter.kt">
+    <entry file="file://$PROJECT_DIR$/src/model/GreenFilterBlackWhite.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+        <state relative-caret-position="90">
+          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+          <folding>
+            <element signature="e#15#72#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Pixel.kt">
+    <entry file="file://$PROJECT_DIR$/src/model/RedFilter.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/control/ImageProcessorController.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="10" selection-end-column="117" />
+        <state relative-caret-position="285">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+          <folding>
+            <element signature="e#15#72#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/view/ImageJFrame.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+        <state relative-caret-position="195">
+          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/RedFilterBlackWhite.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#15#72#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/util/Matrix2.kt" />
+    <entry file="file://$PROJECT_DIR$/src/model/TesteF.kt" />
+    <entry file="file://$PROJECT_DIR$/src/model/Pixel.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/ImageData.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="74" lean-forward="true" selection-start-line="7" selection-start-column="74" selection-end-line="7" selection-end-column="74" />
+          <folding>
+            <element signature="e#0#119#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/util/Filters.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/control/ImageProcessorController.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="19" column="48" lean-forward="true" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model/GreenFilter.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="26" column="79" selection-start-line="26" selection-start-column="79" selection-end-line="26" selection-end-column="79" />
+        <state relative-caret-position="240">
+          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="17" selection-end-column="43" />
           <folding>
             <element signature="e#15#72#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Filter.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="45" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/util/Matrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="20" column="57" lean-forward="true" selection-start-line="20" selection-start-column="57" selection-end-line="20" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/ExtensionFilter.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/AverageFilter.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -611,6 +801,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
+          <last-edited>1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -627,7 +818,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
