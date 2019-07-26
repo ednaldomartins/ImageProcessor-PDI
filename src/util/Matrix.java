@@ -14,7 +14,7 @@ public class Matrix {
      * @param mask          mascara que sera aplicada na imagem                                                     *
      * @return pixelMatrix                                                                                          *
      ***************************************************************************************************************/
-    public Pixel[][] zeroExtension(BufferedImage bufferedImage, int[][] mask) {
+    public Pixel[][] zeroExtension(BufferedImage bufferedImage, float[][] mask) {
         //w: largura da imagem, h: altura da imagem
         int w = bufferedImage.getWidth(), h = bufferedImage.getHeight();
         //m: borda adicionada a largura, n: borda adicionada a altura
@@ -32,7 +32,7 @@ public class Matrix {
         return pixelMatrix;
     }
 
-    public Pixel[][] edgeExtension(BufferedImage bufferedImage, int[][] mask) {
+    public Pixel[][] edgeExtension(BufferedImage bufferedImage, float[][] mask) {
         //reusar o codigo de criacao de matriz com extensao com zeros
         Pixel [][] pixelMatrix = zeroExtension(bufferedImage, mask);
         // ! adicionar borda recheada e deliciosa

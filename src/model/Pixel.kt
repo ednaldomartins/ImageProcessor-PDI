@@ -1,8 +1,8 @@
 package model
 
 class Pixel (
-    var red: Int = 0,
-    var green: Int = 0,
-    var blue: Int = 0,
-    var alpha: Int = 0
+    var red: Float = 0f,
+    var green: Float = 0f,
+    var blue: Float = 0f,
+    var alpha: Float = 0f
 )
