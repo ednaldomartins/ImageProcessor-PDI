@@ -8,5 +8,7 @@ import javax.imageio.ImageIO
  * created on july 20, 2019                                                                                         *
  *******************************************************************************************************************/
 class ImageData {
-    fun loadImage(path: String) = ImageIO.read(File(path))
+    val PATH = "..//ImageProcessor//in//images//"
+    //@return BufferedImage
+    fun loadImage(imageName: String) = ImageIO.read(File(PATH+imageName))
 }
