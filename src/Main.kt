@@ -5,18 +5,21 @@ import view.showImage
 fun main () {
     val imgController = ImageProcessorController()
     //local da imagem
-    imgController.loadImage("..//ImageProcessor//imagens//lena256color.jpg")
-
+    imgController.loadImage("lena256color.jpg")
+    //exibir imagem original
+    showImage(imgController.bufferedImage)
+    //tempo inicial
     val time = System.currentTimeMillis()
 
     //testando filtro verde
     //imgController.processImage( GreenFilter() )
-    //teste de filtro vermelho em preto e branco
+    //testando filtro vermelho em preto e branco
     //imgController.processImage( RedFilterBlackWhite() )
-
+    //testando filtro da media
     imgController.processImage(AverageFilter())
-    //mostrar resultado da imagem
-    showImage(imgController.bufferedImage)
 
+    //exibir resultado do filtro aplicado na imagem
+    showImage(imgController.bufferedImage)
+    //tempo
     println( "${System.currentTimeMillis() - time} milissegundos ")
 }
