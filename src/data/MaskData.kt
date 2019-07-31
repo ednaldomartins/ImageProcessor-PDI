@@ -17,14 +17,12 @@ class MaskData {
         try {
             val inputStream: InputStream = File(PATH+maskName).inputStream()
             val bufferedReader: BufferedReader = inputStream.bufferedReader()
-            val size = bufferedReader.readLine()
-
             //primeira linha = Largura X Altura
-            val vSize = size.toUpperCase().split("X")
+            val vSize = bufferedReader.readLine().toUpperCase().split('X')
             mask =  Array(vSize[0].toInt()) { FloatArray ( vSize[1].toInt() ) }
+            //linha a linha pegar os valores da matriz
             for (i in 0 until mask.size) {
-                val line = bufferedReader.readLine()
-                val vLine = line.split(" ")
+                val vLine = bufferedReader.readLine().split(' ')
                 for (j in 0 until mask[0].size) {
                     mask[i][j] = vLine[j].toFloat()
                 }
