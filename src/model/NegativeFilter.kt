@@ -6,7 +6,7 @@ import java.awt.image.BufferedImage
 /********************************************************************************************************************
  * @author Danillo Medeiros                                                                                         *
  * created on july 30, 2019                                                                                         *
- *******************************************************************************************************************/
+ ******************************************************************************************************************/
 
 //filtro negativo, obtem os valores RBG da imagem carregada e faz a subtraçao por 255 ,gerando assim uma imagem negativa
 class NegativeFilter: Filter {
