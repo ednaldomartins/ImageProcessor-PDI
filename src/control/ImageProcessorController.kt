@@ -3,7 +3,7 @@ package control
 import data.ImageData
 import model.ExtensionFilter
 import model.Filter
-import util.Matrix
+import util.Extension
 import java.awt.image.BufferedImage
 
 /********************************************************************************************************************
@@ -18,7 +18,7 @@ class ImageProcessorController {
     }
 
     fun processImage (filter: ExtensionFilter) {
-        filter.filtrate(bufferedImage, Matrix().zeroExtension(bufferedImage, filter.mask) )
+        filter.filtrate(bufferedImage, Extension().zeroExtension(bufferedImage, filter.mask) )
     }
 
     fun loadImage(path: String) {
