@@ -1,8 +1,5 @@
 import control.ImageProcessorController
-import model.AverageFilter
-import model.BlueFilter
-import model.BlueFilterBlackWhite
-import model.NegativeFilter
+import model.*
 import view.showImage
 
 fun main () {
@@ -17,7 +14,11 @@ fun main () {
     //testando filtro verde
     //imgController.processImage( GreenFilter() )
     //filtro negativo
-    imgController.processImage( NegativeFilter() )
+    //imgController.processImage( NegativeFilter() )
+    //mudança de brilho
+    //imgController.processImage( Bright() )
+    //brilho YIQ
+    imgController.processImage( BrightYIQ() )
     //filtro azul
     //imgController.processImage( BlueFilter() )
     //filtro azul preto e branco
