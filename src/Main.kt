@@ -13,23 +13,25 @@ fun main () {
 
     //testando filtro verde
     //imgController.processImage( GreenFilter() )
-    //filtro negativo
+    //testando filtro negativo
     //imgController.processImage( NegativeFilter() )
-    //mudança de brilho
+    //testando mudança de brilho
     //imgController.processImage( Bright() )
-    //brilho YIQ
-    imgController.processImage( BrightYIQ() )
-    //filtro azul
+    //testando brilho YIQ
+    //imgController.processImage( BrightYIQ() )
+    //testando filtro azul
     //imgController.processImage( BlueFilter() )
-    //filtro azul preto e branco
+    //testando filtro azul preto e branco
     //imgController.processImage( BlueFilterBlackWhite() )
     //testando filtro vermelho em preto e branco
     //imgController.processImage( RedFilterBlackWhite() )
     //testando filtro da media
     //imgController.processImage(AverageFilter())
+    //testando filtro mediana
+    imgController.processImage(MedianFilter())
 
     //exibir resultado do filtro aplicado na imagem
     showImage(imgController.bufferedImage)
-    //tempo
+    //tempo de execucao
     println( "${System.currentTimeMillis() - time} milissegundos ")
 }
