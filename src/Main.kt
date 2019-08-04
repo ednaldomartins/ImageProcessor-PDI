@@ -28,8 +28,9 @@ fun main () {
     //testando filtro da media
     //imgController.processImage(AverageFilter())
     //testando filtro mediana
-    imgController.processImage(MedianFilter())
-
+    //imgController.processImage(MedianFilter())
+    //sobel
+    imgController.processImage(Sobel())
     //exibir resultado do filtro aplicado na imagem
     showImage(imgController.bufferedImage)
     //tempo de execucao
