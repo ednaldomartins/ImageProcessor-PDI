@@ -15,13 +15,7 @@ class Converter {
                 }
             }
         }
-/*
-        fun createYIQfromRGB(pixelMatrix: Array<Array<Pixel>>): Array<Array<Pixel?>> {
-            val pixelMatrixYIQ: Array<Array<Pixel?>> = pixelMatrix.copyOf()
-            RGBtoYIQ(pixelMatrixYIQ)
-            return pixelMatrixYIQ
-        }
-*/
+
         fun YIQtoRGB(pixelMatrix: Array<Array<Pixel?>>) {
             for (w in 0 until pixelMatrix.size) {
                 for (h in 0 until pixelMatrix[0].size) {
