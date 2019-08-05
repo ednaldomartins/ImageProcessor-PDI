@@ -32,11 +32,31 @@ public class Matrix {
 
     public static void copyImageToMatrix(BufferedImage bufferedImage, Pixel[][] pixelMatrix) {
         for (int i = 0; i < pixelMatrix.length; i++) {
-            for (int j = 0; j < pixelMatrix.length; j++) {
+            for (int j = 0; j < pixelMatrix[0].length; j++) {
                 Color color = new Color(bufferedImage.getRGB(i, j));
                 pixelMatrix[i][j] = new Pixel(color.getRed(), color.getGreen(), color.getBlue(), color.getAlpha());
             }
         }
+    }
+
+    public static void convolution(float[][] floatMatrix) {
+        final int w = floatMatrix.length, h = floatMatrix[0].length;
+        float[][] copyMatrix = copyMatrix(floatMatrix);
+        for (int i = 0; i < w; i++) {
+            for (int j = 0; j < h; j++) {
+                floatMatrix[w-i-1][h-j-1] = copyMatrix[i][j];
+            }
+        }
+    }
+
+    public static float[][] copyMatrix(float[][] matrix) {
+        final int w = matrix.length, h = matrix[0].length;
+        float [][] copy = new float[w][h];
+        for (int i = 0; i < w; i++)
+            for (int j = 0; j < h; j++)
+                copy[i][j] = matrix[i][j];
+
+        return copy;
     }
 
 }
