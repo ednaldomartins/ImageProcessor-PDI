@@ -1,82 +1,63 @@
 package model;
 
+import data.MaskData;
+
 import java.awt.image.BufferedImage;
 import java.awt.image.WritableRaster;
-import java.io.File;
-import java.io.IOException;
-import javax.imageio.ImageIO;
-import java.awt.Color;
 
-public class Sobel implements Filter{
+public class Sobel implements ExtensionFilter{
+    float[][] mask = new MaskData().loadEmptyMask("mascaraVazia3x3.txt");
     @Override
-    public void filtrate( BufferedImage bufferedImage)  {
-        WritableRaster image = bufferedImage.getRaster();
-
-        int x = image.getWidth();
-        int y = image.getHeight();
-
-        int maxGval = 0;//valor maximo de G
-        int[][] edgeColors = new int[x][y];//cores da borda
-        int maxGradient = -1;//gradiene maximo
-
-        for (int i = 1; i < x - 1; i++) {
-            for (int j = 1; j < y - 1; j++) {
-
-                int val00 = getGrayScale(new Color(bufferedImage.getRGB(i - 1, j - 1)).getRed(),new Color(bufferedImage.getRGB(i - 1, j - 1)).getGreen(),new Color(bufferedImage.getRGB(i - 1, j - 1)).getBlue());
-                int val01 = getGrayScale(new Color(bufferedImage.getRGB(i - 1, j)).getRed(),new Color(bufferedImage.getRGB(i - 1, j)).getGreen(),new Color(bufferedImage.getRGB(i - 1, j)).getBlue());
-                int val02 = getGrayScale(new Color(bufferedImage.getRGB(i - 1, j + 1)).getRed(),new Color(bufferedImage.getRGB(i - 1, j + 1)).getGreen(),new Color(bufferedImage.getRGB(i - 1, j + 1)).getBlue());
-
-                int val10 = getGrayScale(new Color(bufferedImage.getRGB(i, j - 1)).getRed(),new Color(bufferedImage.getRGB(i, j - 1)).getGreen(),new Color(bufferedImage.getRGB(i, j - 1)).getBlue());
-                int val11 = getGrayScale(new Color(bufferedImage.getRGB(i, j)).getRed(),new Color(bufferedImage.getRGB(i, j)).getGreen(),new Color(bufferedImage.getRGB(i, j)).getBlue());
-                int val12 = getGrayScale(new Color(bufferedImage.getRGB(i, j + 1)).getRed(),new Color(bufferedImage.getRGB(i, j + 1)).getGreen(),new Color(bufferedImage.getRGB(i, j + 1)).getBlue());
-
-                int val20 = getGrayScale(new Color(bufferedImage.getRGB(i + 1, j - 1)).getRed(),new Color(bufferedImage.getRGB(i + 1, j - 1)).getGreen(),new Color(bufferedImage.getRGB(i + 1, j - 1)).getBlue());
-                int val21 = getGrayScale(new Color(bufferedImage.getRGB(i + 1, j)).getRed(),new Color(bufferedImage.getRGB(i + 1, j)).getGreen(),new Color(bufferedImage.getRGB(i + 1, j)).getBlue());
-                int val22 = getGrayScale(new Color(bufferedImage.getRGB(i + 1, j + 1)).getRed(),new Color(bufferedImage.getRGB(i + 1, j + 1)).getGreen(),new Color(bufferedImage.getRGB(i + 1, j + 1 - 1)).getBlue());
-
-                int gx =  ((-1 * val00) + (0 * val01) + (1 * val02))
-                        + ((-2 * val10) + (0 * val11) + (2 * val12))
-                        + ((-1 * val20) + (0 * val21) + (1 * val22));
-
-                int gy =  ((-1 * val00) + (-2 * val01) + (-1 * val02))
-                        + ((0 * val10) + (0 * val11) + (0 * val12))
-                        + ((1 * val20) + (2 * val21) + (1 * val22));
-
-                double gval = Math.sqrt((gx * gx) + (gy * gy));
-                int g = (int) gval;
-
-                if(maxGradient < g) {
-                    maxGradient = g;
+    public void filtrate( BufferedImage bufferedImage, Pixel[][] pixelArray)  {
+        WritableRaster imgWrite = bufferedImage.getRaster();
+        //cores da borda (usaremos edgeColors para nao alterar o pixelArray durante o processo)
+        int[][] edgeColors = new int[pixelArray.length][pixelArray[0].length];
+        //gradiene maximo (comecamos com -1 para testar no if a primeira vez sem dar nullPointer)
+        int maxGradient = -1;
+        //percorrer todos os pixels da imagem
+        for (int i = 1; i < pixelArray.length - 1; i++) {
+            for (int j = 1; j < pixelArray[0].length - 1; j++) {
+                //temp: guarda os valores convertidos para nivel de cinza, da regiao aonde as duas mascaras serao aplicadas
+                float[] temp = new float[mask.length*mask[0].length];
+                for (int k = 0, n = 0; k < mask.length; k++) {
+                    for (int l = 0; l < mask[0].length; l++, n++) {
+                        //https://en.wikipedia.org/wiki/Grayscale, calculando a luminancia
+                        temp[n] = (0.2126f * pixelArray[i-1+k][j-1+l].getRed() + 0.7152f * pixelArray[i-1+k][j-1+l].getGreen() + 0.0722f * pixelArray[i-1+k][j-1+l].getBlue());
+                    }
                 }
+                //sobel vertical * regiao aplicada da imagem
+                int gX = (int) ((-1 * temp[0]) + (-2 * temp[3]) + (-1 * temp[6]) + (1 * temp[2])  + (2 * temp[5])  + (1 * temp[8]));
+                //sobel horizontal * regiao aplicada da imagem
+                int gY = (int) ((-1 * temp[0]) + (-2 * temp[1]) + (-1 * temp[2]) + (1 * temp[6])  + (2 * temp[7])  + (1 * temp[8]));
+                //resultado do gradiente
+                int gradient = (int) Math.sqrt((gX * gX) + (gY * gY));
+                //se o novo valor do gradiente for maior do que o maior valor ate o momento, entao o maxGradient assume esse valor
+                if( gradient > maxGradient ) maxGradient = gradient;
 
-                edgeColors[i][j] = g;
+                edgeColors[i][j] = gradient;
             }
         }
 
         double scale = 255.0 / maxGradient;
-
-        for (int i = 1; i < x - 1; i++) {
-            for (int j = 1; j < y - 1; j++) {
+        for (int i = 1; i < pixelArray.length - 1; i++) {
+            for (int j = 1; j < pixelArray[0].length - 1; j++) {
                 int edgeColor = edgeColors[i][j];
                 edgeColor = (int)(edgeColor * scale);
                 edgeColor = 0xff000000 | (edgeColor << 16) | (edgeColor << 8) | edgeColor;
-                int[] v = new int[3];
-                v[0] = (edgeColor >> 16) & 0xff;
-                v[1] = (edgeColor >> 8) & 0xff;
-                v[2] = (edgeColor) & 0xff;
+                int[] imagePixel = new int[3];
+                imagePixel[0] = (edgeColor >> 16) & 0xff;
+                imagePixel[1] = (edgeColor >> 8) & 0xff;
+                imagePixel[2] = (edgeColor) & 0xff;
 
-                image.setPixel(i,j,v);
+                imgWrite.setPixel( i-1,j-1, imagePixel);
             }
         }
 
     }//fim do filtrate
 
-    public static int  getGrayScale(int r,int g,int b) {//escala do gradiente
-
-        //https://en.wikipedia.org/wiki/Grayscale, calculando a luminancia
-        int gray = (int)(0.2126 * r + 0.7152 * g + 0.0722 * b);
-        //int gray = (r + g + b) / 3;
-
-        return gray;
+    @Override
+    public float[][] getMask() {
+        return mask;
     }
+
 }
