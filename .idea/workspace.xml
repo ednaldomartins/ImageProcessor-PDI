@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e15bc31f-c648-48a2-8e84-5f0acb663c01" name="Default Changelist" comment="Classe para converter do sistema RGB para YIQ, e YIQ para RGB.">
-      <change afterPath="$PROJECT_DIR$/src/model/MedianFilter.kt" afterDir="false" />
+    <list default="true" id="e15bc31f-c648-48a2-8e84-5f0acb663c01" name="Default Changelist" comment="Testes para realizar convolução.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/control/ImageProcessorController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/control/ImageProcessorController.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/ExtensionFilter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/ExtensionFilter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/Matrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/Matrix.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/ImageJFrame.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/ImageJFrame.kt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,24 +27,6 @@
         <option value="Kotlin Class" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>t</find>
-      <find>imagemEditavel</find>
-      <find>red</find>
-      <find>blue</find>
-      <find>7</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>imagemEditavel</replace>
-      <replace>vetorDaImagem</replace>
-      <replace>escritorDaImagem</replace>
-      <replace>green</replace>
-      <replace>blue</replace>
-      <replace>alpha</replace>
-      <replace>6</replace>
-    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -100,41 +84,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1563364998572</updated>
-    </task>
-    <task id="LOCAL-00001" summary="Commit inicial.">
-      <created>1563366167008</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1563366167008</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Commit inicial.">
-      <created>1563384481512</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1563384481512</updated>
-    </task>
-    <task id="LOCAL-00003" summary="IDE.">
-      <created>1563384717875</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1563384717875</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Imagens propostas para usar no projeto.">
-      <created>1563384756515</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1563384756515</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Descrição do trabalho.">
-      <created>1563384784675</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1563384784675</updated>
     </task>
     <task id="LOCAL-00006" summary="IDE.">
       <created>1563384825570</created>
@@ -444,19 +393,61 @@
       <option name="project" value="LOCAL" />
       <updated>1564875945146</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="Filtro mediana implementado.">
+      <created>1564881788084</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1564881788085</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Teste para o filtro mediana.">
+      <created>1564881811712</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1564881811712</updated>
+    </task>
+    <task id="LOCAL-00052" summary="limpando e comentando o código.">
+      <created>1565016678214</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1565016678215</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Remoção de código desnecessário.">
+      <created>1565021097219</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1565021097219</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Método para convolução de máscaras (tipo float).">
+      <created>1565021143206</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1565021143206</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="separação do método processImage para executar processor com ou sem extensão." />
-    <MESSAGE value="Filtro verde em preto e branco." />
-    <MESSAGE value="Interface para filtros com extensão e mascara." />
-    <MESSAGE value="Segundo teste." />
-    <MESSAGE value="Classe para manipulação de matrizes." />
-    <MESSAGE value="Classe renomeada." />
     <MESSAGE value="Correção no tipo do Pixel. Após calcular o novo valor do pixel, devemos manter esse valor como Float dentro da pixelMatrix para não perder decimais quando calcular o pixel vizenho. Apenas a imagem original irá receber o pixel convertido para inteiro." />
     <MESSAGE value="adição da máscara que será usada." />
     <MESSAGE value="Criação do filtro da média." />
@@ -476,16 +467,17 @@
     <MESSAGE value="Novos arquivos que serão usados para carregar a máscara para o filtro média e o filtro mediana. Ambos não precisam de valores dentro da máscara (Ambos vão variar a máscara de acordo com o algoritmo de cada um destes)." />
     <MESSAGE value="Método para carregar uma máscara vazia foi criado para ser usado pelo filtro média e mediana." />
     <MESSAGE value="Modificações foram feitas para que o próprio algoritmo da média calcule a sua máscara de acordo com o tamanho da máscara recebida." />
-    <option name="LAST_COMMIT_MESSAGE" value="Modificações foram feitas para que o próprio algoritmo da média calcule a sua máscara de acordo com o tamanho da máscara recebida." />
+    <MESSAGE value="Filtro mediana implementado." />
+    <MESSAGE value="Teste para o filtro mediana." />
+    <MESSAGE value="limpando e comentando o código." />
+    <MESSAGE value="Remoção de código desnecessário." />
+    <MESSAGE value="Método para convolução de máscaras (tipo float)." />
+    <MESSAGE value="Testes para realizar convolução." />
+    <option name="LAST_COMMIT_MESSAGE" value="Testes para realizar convolução." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/model/Imagem.kt</url>
-          <line>9</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/model/AverageFilter.kt</url>
           <line>11</line>
@@ -495,6 +487,11 @@
           <url>file://$PROJECT_DIR$/src/model/MedianFilter.kt</url>
           <line>41</line>
           <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/util/Extension.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="24" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

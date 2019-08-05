@@ -1,10 +1,11 @@
 import control.ImageProcessorController
 import model.*
+import util.Matrix
 import view.showImage
 
 fun main () {
     val imgController = ImageProcessorController()
-    //local da imagem
+    //nome do arquivo da imagem
     imgController.loadImage("lena256color.jpg")
     //exibir imagem original
     showImage(imgController.bufferedImage)
@@ -28,11 +29,13 @@ fun main () {
     //testando filtro da media
     //imgController.processImage(AverageFilter())
     //testando filtro mediana
-    //imgController.processImage(MedianFilter())
-    //sobel
-    imgController.processImage(Sobel())
+    imgController.processImage(MedianFilter(), true)
+    //testando filtro de sobel
+    //imgController.processImage(Sobel())
+
     //exibir resultado do filtro aplicado na imagem
     showImage(imgController.bufferedImage)
+
     //tempo de execucao
     println( "${System.currentTimeMillis() - time} milissegundos ")
 }

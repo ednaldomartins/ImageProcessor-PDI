@@ -39,7 +39,7 @@ public class Matrix {
         }
     }
 
-    public static void convolution(float[][] floatMatrix) {
+    public static void convolute(float[][] floatMatrix) {
         final int w = floatMatrix.length, h = floatMatrix[0].length;
         float[][] copyMatrix = copyMatrix(floatMatrix);
         for (int i = 0; i < w; i++) {
