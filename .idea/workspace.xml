@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e15bc31f-c648-48a2-8e84-5f0acb663c01" name="Default Changelist" comment="Testes para realizar convolução.">
+    <list default="true" id="e15bc31f-c648-48a2-8e84-5f0acb663c01" name="Default Changelist" comment="Criaçao da classe Sobel">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/control/ImageProcessorController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/control/ImageProcessorController.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/ExtensionFilter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/ExtensionFilter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/util/Matrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/Matrix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/ImageJFrame.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/ImageJFrame.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/ImageData.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/ImageData.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/Extension.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/Extension.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,9 +19,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Interface" />
+        <option value="Kotlin Class" />
         <option value="Kotlin File" />
         <option value="Class" />
-        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
