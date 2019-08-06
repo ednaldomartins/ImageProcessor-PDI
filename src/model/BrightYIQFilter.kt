@@ -5,7 +5,7 @@ import util.Matrix.copyImageToMatrix
 import java.awt.Color
 import java.awt.image.BufferedImage
 
-class BrightYIQ: Filter {
+class BrightYIQFilter: Filter {
 
     override fun filtrate(bufferedImage: BufferedImage) {
 
@@ -37,7 +37,7 @@ class BrightYIQ: Filter {
                 vPixel[0] = if (pixelMatrix[i][j]!!.red > 255) 255 else if (pixelMatrix[i][j]!!.red < 0) 0 else pixelMatrix[i][j]!!.red.toInt()
                 vPixel[1] = if (pixelMatrix[i][j]!!.green > 255) 255 else if (pixelMatrix[i][j]!!.green < 0) 0 else pixelMatrix[i][j]!!.green.toInt()
                 vPixel[2] = if (pixelMatrix[i][j]!!.blue > 255) 255 else if (pixelMatrix[i][j]!!.blue < 0) 0 else pixelMatrix[i][j]!!.blue.toInt()
-                vPixel[4] = Color(bufferedImage.getRGB(i, j)).alpha
+                vPixel[3] = Color(bufferedImage.getRGB(i, j)).alpha
                 imgWriter.setPixel(i, j, vPixel)
             }
         }
