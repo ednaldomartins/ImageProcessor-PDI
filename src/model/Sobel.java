@@ -2,6 +2,7 @@ package model;
 
 import data.MaskData;
 
+import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.awt.image.WritableRaster;
 
@@ -44,8 +45,8 @@ public class Sobel implements ExtensionFilter{
         for (int i = 0; i < w; i++) {
             for (int j = 0; j < h; j++) {
                 int edgeColor = (int)(edgeColors[i+1][j+1] * scale);
-                int[] imagePixel = {edgeColor, edgeColor, edgeColor};
-                imgWrite.setPixel( i,j, imagePixel);
+                int[] imagePixel = {edgeColor, edgeColor, edgeColor, new Color(bufferedImage.getRGB(i, j)).getAlpha()};
+                imgWrite.setPixel( i, j, imagePixel);
             }
         }
 

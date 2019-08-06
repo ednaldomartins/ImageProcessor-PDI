@@ -14,7 +14,7 @@ class BlueFilterBlackWhite: Filter {
 
         for (i in 0 until bufferedImage.width) {
             for (j in 0 until bufferedImage.height) {
-                val v = intArrayOf(Color(bufferedImage.getRGB(i, j)).blue, Color(bufferedImage.getRGB(i, j)).blue, Color(bufferedImage.getRGB(i, j)).blue)
+                val v = intArrayOf(Color(bufferedImage.getRGB(i, j)).blue, Color(bufferedImage.getRGB(i, j)).blue, Color(bufferedImage.getRGB(i, j)).blue, Color(bufferedImage.getRGB(i, j)).alpha)
                 imgWriter.setPixel(i, j, v)
             }
         }

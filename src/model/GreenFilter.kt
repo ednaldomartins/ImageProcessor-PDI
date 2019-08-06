@@ -14,7 +14,7 @@ class GreenFilter: Filter {
 
         for (i in 0 until bufferedImage.width) {
             for (j in 0 until bufferedImage.height) {
-                val v = intArrayOf(0, Color(bufferedImage.getRGB(i,j)).green, 0)
+                val v = intArrayOf(0, Color(bufferedImage.getRGB(i,j)).green, 0, Color(bufferedImage.getRGB(i, j)).alpha)
                 imgWriter.setPixel(i, j, v)
             }
         }

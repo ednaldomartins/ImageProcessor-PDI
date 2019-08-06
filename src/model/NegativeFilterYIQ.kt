@@ -2,6 +2,7 @@ package model
 
 import util.Converter
 import util.Matrix.copyImageToMatrix
+import java.awt.Color
 import java.awt.image.BufferedImage
 
 class NegativeFilterYIQ: Filter {
@@ -23,13 +24,14 @@ class NegativeFilterYIQ: Filter {
         Converter.YIQtoRGB(pixelMatrix)
         //cria o escritor da imagem
         val imgWriter = bufferedImage.raster
-        val vPixel = intArrayOf(0,0,0)
+        val vPixel = intArrayOf(0,0,0,255)
         //apos trazer do YIQ para RGB, devemos verificar se os valores estao fora dos limites permitidos no RGB(255)
         for (i in 0 until bufferedImage.width) {
             for (j in 0 until bufferedImage.height) {
                 vPixel[0] = if (pixelMatrix[i][j]!!.red > 255) 255 else if (pixelMatrix[i][j]!!.red < 0) 0 else pixelMatrix[i][j]!!.red.toInt()
                 vPixel[1] = if (pixelMatrix[i][j]!!.green > 255) 255 else if (pixelMatrix[i][j]!!.green < 0) 0 else pixelMatrix[i][j]!!.green.toInt()
                 vPixel[2] = if (pixelMatrix[i][j]!!.blue > 255) 255 else if (pixelMatrix[i][j]!!.blue < 0) 0 else pixelMatrix[i][j]!!.blue.toInt()
+                vPixel[3] = Color(bufferedImage.getRGB(i, j)).alpha
                 imgWriter.setPixel(i, j, vPixel)
             }
         }

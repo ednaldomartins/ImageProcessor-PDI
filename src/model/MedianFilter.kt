@@ -36,7 +36,7 @@ class MedianFilter : ExtensionFilter {
             greenMask.sort()
             blueMask.sort()
             //criado apenas para facilitar a leitura
-            val imagePixel = intArrayOf(redMask[redMask.size/2], greenMask[redMask.size/2], blueMask[redMask.size/2], 255)
+            val imagePixel = intArrayOf(redMask[redMask.size/2], greenMask[redMask.size/2], blueMask[redMask.size/2], pixelArray[i][j]!!.alpha.toInt())
             //escrevendo o resultado na imagem
             val rasterImage = bufferedImage.raster
             rasterImage.setPixel( i-w, j-h, imagePixel)

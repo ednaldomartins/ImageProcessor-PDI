@@ -27,6 +27,7 @@ class Bright: Filter {
             for (j in 0 until bufferedImage.height) {
                 val v = intArrayOf((Color(bufferedImage.getRGB(i,j)).red * c).toInt(),
                     (Color(bufferedImage.getRGB(i,j)).green * c).toInt(), (Color(bufferedImage.getRGB(i,j)).blue * c).toInt()
+                    , Color(bufferedImage.getRGB(i, j)).alpha
                 )
                 if(v[0] > 255){
                     v[0] = 255
