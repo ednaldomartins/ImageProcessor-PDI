@@ -1,6 +1,5 @@
 import control.ImageProcessorController
 import model.*
-import util.Matrix
 import view.showImage
 import java.util.*
 
@@ -10,51 +9,99 @@ fun main () {
     imgController.loadImage("gta.jpg")
     //exibir imagem original
     showImage(imgController.bufferedImage)
-    //tempo inicial
-    val time = System.currentTimeMillis()
 
     var x: Int
     val i = Scanner(System.`in`)
 
     loop@ while (true){
 
-    println(
-        "1> Filtro Verde\n2> Filtro Azul\n3> Filtro Vermelho\n4> Filtro Verde preto e branco\n" +
-                "5> Filtro Negativo\n6> Filtro Negativo YIQ\n7> Brilho\n8> Brilho YIQ\n9> Media\n" +
-                "10> Mediana\n11> Sobel\n12> Sair\n"
-    )
+        println(
+                "1. Filtro Vermelhor\n" +
+                "2. Filtro Verde\n" +
+                "3. Filtro Azul\n" +
+                "4. Filtro Vermelho em preto e branco\n" +
+                "5. Filtro Verde em preto e branco\n" +
+                "6. Filtro Azul em preto e branco\n" +
+                "7. Filtro Negativo\n" +
+                "8. Filtro Negativo YIQ\n" +
+                "9. Brilho RGB\n" +
+                "10. Brilho YIQ\n" +
+                "11. Filtro Preto e Branco\n" +
+                "12. Media\n" +
+                "13. Mediana\n" +
+                "14. Sobel\n" +
+                "15. Recarregar Imagem\n" +
+                "16. Sair\n"
+        )
         x = i.nextInt()
+        //tempo inicial
+        //val time = System.currentTimeMillis()
+        when (x) {
 
-    when (x) {
+            1 -> imgController.processImage( RedFilter() )
 
-        1 -> imgController.processImage( GreenFilter() )
+            2 -> imgController.processImage( GreenFilter() )
 
-        2 -> imgController.processImage( BlueFilter() )
+            3 -> imgController.processImage( BlueFilter() )
 
-        3 -> imgController.processImage( RedFilter() )
+            4 -> imgController.processImage( RedFilterBlackWhite() )
 
-        4 -> imgController.processImage( GreenFilterBlackWhite() )
+            5 -> imgController.processImage( GreenFilterBlackWhite() )
 
-        5 -> imgController.processImage( NegativeFilter() )
+            6 -> imgController.processImage( BlueFilterBlackWhite() )
 
-        6 -> imgController.processImage( NegativeFilterYIQ() )
+            7 -> imgController.processImage( NegativeFilter() )
 
-        7 -> imgController.processImage( Bright() )
+            8 -> imgController.processImage( NegativeFilterYIQ() )
 
-        8 -> imgController.processImage( BrightYIQFilter() )
+            9 -> {
+                println("digite o valor de c ")
+                val c = i.nextFloat()
+                val bright = BrightRGBFilter()
+                bright.c = c
+                imgController.processImage( bright )
+            }
 
-        9 -> imgController.processImage(AverageFilter())
+            10 -> {
+                println("digite o valor de c ")
+                val c = i.nextFloat()
+                val bright = BrightYIQFilter()
+                bright.c = c
+                imgController.processImage( bright )
+            }
 
-        10 -> imgController.processImage(MedianFilter(), true)
+            11 -> imgController.processImage( BlackWhiteFilter() )
 
-        11 -> imgController.processImage(Sobel())
+            12 -> {
+                println("digite a largura da mascara")
+                val w = i.nextInt()
+                println("digite a altura da mascara")
+                val h = i.nextInt()
+                val averageFilter = AverageFilter( Array(w) { FloatArray (h) } )
+                println("aplicar Convolucao: 1 - Sim / n - Nao")
+                val b = i.nextInt()
+                if (b == 1) imgController.processImage( averageFilter, true ) else imgController.processImage(averageFilter)
+            }
 
-        12 -> break@loop
+            13 -> {
+                println("digite a largura da mascara")
+                val w = i.nextInt()
+                println("digite a altura da mascara")
+                val h = i.nextInt()
+                val medianFilter = MedianFilter( Array(w) { FloatArray (h) } )
+                imgController.processImage( medianFilter )
+            }
 
-    }
+            14 -> imgController.processImage( Sobel() )
+
+            15 -> imgController.loadImage("gta.jpeg")
+
+            16 -> break@loop
+
+        }
+        //tempo de execucao
+        //println("\n ${System.currentTimeMillis() - time} milissegundos.\n\n")
         //exibir resultado do filtro aplicado na imagem
         showImage(imgController.bufferedImage)
-}
-    //tempo de execucao
-    println( "${System.currentTimeMillis() - time} milissegundos ")
+    }
 }

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e15bc31f-c648-48a2-8e84-5f0acb663c01" name="Default Changelist" comment="Criaçao da classe Sobel">
+    <list default="true" id="e15bc31f-c648-48a2-8e84-5f0acb663c01" name="Default Changelist" comment="não parar execução quando fechar janela e usar variável única pra todo o programa.">
+      <change afterPath="$PROJECT_DIR$/in/images/gta.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/ImageData.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/ImageData.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/util/Extension.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/Extension.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.kt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,9 +19,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Interface" />
-        <option value="Kotlin Class" />
         <option value="Kotlin File" />
         <option value="Class" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -33,11 +33,16 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PetShopVendas" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/in/images" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/in/images" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -81,55 +86,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1563364998572</updated>
-    </task>
-    <task id="LOCAL-00006" summary="IDE.">
-      <created>1563384825570</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1563384825570</updated>
-    </task>
-    <task id="LOCAL-00007" summary="ignore.">
-      <created>1563385546190</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1563385546190</updated>
-    </task>
-    <task id="LOCAL-00008" summary="ignore.">
-      <created>1563386613318</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1563386613318</updated>
-    </task>
-    <task id="LOCAL-00009" summary="ignore.">
-      <created>1563386714615</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1563386714615</updated>
-    </task>
-    <task id="LOCAL-00010" summary="ignore.">
-      <created>1563386790169</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1563386790169</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Criação das classes Pixel e Imagem.">
-      <created>1563482727816</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1563482727816</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Métodos para retornar a matriz A de no tamanho que será usado no processamento de edição da imagem.">
-      <created>1563719577723</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1563719577724</updated>
     </task>
     <task id="LOCAL-00013" summary="Classe criada para carregar imagem, e salvar resultados da edição. O método para carregar a imagem foi criado.">
       <created>1563719655790</created>
@@ -425,7 +381,56 @@
       <option name="project" value="LOCAL" />
       <updated>1565021143206</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="Testes para realizar convolução.">
+      <created>1565021947717</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1565021947717</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Filtro preto e branco.">
+      <created>1565102640175</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1565102640176</updated>
+    </task>
+    <task id="LOCAL-00057" summary="Refinamento de código.">
+      <created>1565104613456</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1565104613456</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Correção de bug no alpha para algumas imagens em formato PNG.">
+      <created>1565127837340</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1565127837346</updated>
+    </task>
+    <task id="LOCAL-00059" summary="Renomeando e correção na posicao do vetor.">
+      <created>1565128936314</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1565128936314</updated>
+    </task>
+    <task id="LOCAL-00060" summary="não parar execução quando fechar janela.">
+      <created>1565147162067</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1565147162068</updated>
+    </task>
+    <task id="LOCAL-00061" summary="Os filtros estão recebendo a entrada pelo menu.">
+      <created>1565149672071</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1565149672071</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -445,12 +450,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="Correção no tipo do Pixel. Após calcular o novo valor do pixel, devemos manter esse valor como Float dentro da pixelMatrix para não perder decimais quando calcular o pixel vizenho. Apenas a imagem original irá receber o pixel convertido para inteiro." />
-    <MESSAGE value="adição da máscara que será usada." />
-    <MESSAGE value="Criação do filtro da média." />
-    <MESSAGE value="Substituição e remoção da variável Matriz." />
-    <MESSAGE value="Terceiro teste." />
-    <MESSAGE value="Nova pasta criada para colocar arquivos de entrada do projeto." />
     <MESSAGE value="Classe criada para ler arquivo txt para receber a mascara." />
     <MESSAGE value="Local das imagens adicionado para que o método loadImage receba apenas o nome do arquivo." />
     <MESSAGE value="O método foi alterado para receber uma máscara de tamanho genérico ímpar. ainda é preciso alterar o pivo quando a máscara é de tamanho par." />
@@ -470,20 +469,26 @@
     <MESSAGE value="Remoção de código desnecessário." />
     <MESSAGE value="Método para convolução de máscaras (tipo float)." />
     <MESSAGE value="Testes para realizar convolução." />
-    <option name="LAST_COMMIT_MESSAGE" value="Testes para realizar convolução." />
+    <MESSAGE value="Filtro preto e branco." />
+    <MESSAGE value="Refinamento de código." />
+    <MESSAGE value="Correção de bug no alpha para algumas imagens em formato PNG." />
+    <MESSAGE value="Renomeando e correção na posicao do vetor." />
+    <MESSAGE value="não parar execução quando fechar janela." />
+    <MESSAGE value="Os filtros estão recebendo a entrada pelo menu." />
+    <option name="LAST_COMMIT_MESSAGE" value="Os filtros estão recebendo a entrada pelo menu." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/model/AverageFilter.kt</url>
-          <line>11</line>
-          <option name="timeStamp" value="21" />
+          <url>file://$PROJECT_DIR$/src/model/MedianFilter.kt</url>
+          <line>40</line>
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/model/MedianFilter.kt</url>
-          <line>41</line>
-          <option name="timeStamp" value="23" />
+          <url>file://$PROJECT_DIR$/src/model/GreenFilter.kt</url>
+          <line>17</line>
+          <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/util/Extension.java</url>
