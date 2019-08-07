@@ -14,13 +14,10 @@ S nao pode passar de 0 e 255*/
 
 //valores de teste 0.5; 1.5 e 3; assumindo que seriam valores passados pelo usuario.
 
-class Bright: Filter {
+class BrightRGBFilter: Filter {
 
+    var c: Float = 0f
     override fun filtrate(bufferedImage: BufferedImage) {
-        //var c: Double = 0.5
-        //var c: Double = 1.5
-        var c: Double = 3.0
-
         val imgWriter = bufferedImage.raster
 
         for (i in 0 until bufferedImage.width) {

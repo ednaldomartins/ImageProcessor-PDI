@@ -6,13 +6,8 @@ import java.awt.Color
 import java.awt.image.BufferedImage
 
 class BrightYIQFilter: Filter {
-
+    var c: Float = 0f
     override fun filtrate(bufferedImage: BufferedImage) {
-
-        var c: Float = 0.5f
-        //var c: Float = 1.5f
-        //var c: Float = 3.0f
-
         //cria como nao nulo e envia para uma classe java
         val pixelMatrix: Array<Array<Pixel?>> = Array(bufferedImage.width) { arrayOfNulls<Pixel>(bufferedImage.height)}
         //copia pixels da imagem para matriz sem extensao

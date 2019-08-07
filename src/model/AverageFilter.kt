@@ -3,10 +3,9 @@ package model
 import data.MaskData
 import java.awt.image.BufferedImage
 
-class AverageFilter: ExtensionFilter {
+class AverageFilter(override val mask: Array<FloatArray>): ExtensionFilter {
     //mask = arrayOf(floatArrayOf())
-    override val mask: Array<FloatArray> = MaskData().loadEmptyMask("mascaraVazia3x1.txt")!!
-
+    //override val mask: Array<FloatArray> = MaskData().loadEmptyMask("mascaraVazia3x1.txt")!!
     override fun filtrate(bufferedImage: BufferedImage, pixelArray: Array<Array<Pixel?>>) {
         //pegar o tamanho da borda adicional de cado lado da imagem
         val w: Int = mask.size/2
