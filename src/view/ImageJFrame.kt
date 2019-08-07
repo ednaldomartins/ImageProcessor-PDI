@@ -1,6 +1,7 @@
 package view
 
 import java.awt.Graphics
+import java.awt.Image
 import java.awt.image.BufferedImage
 import javax.swing.JFrame
 import javax.swing.JPanel
@@ -13,10 +14,16 @@ private var frame:JFrame = JFrame()
 
 fun showImage(imagem: BufferedImage) {
     //+24 = barra de titulo
-    frame.setSize(imagem.width, imagem.height+24)
+    var prop = 1f
+    if (imagem.height > 600)
+        prop = 600f/imagem.height
+
+    val w = (imagem.width*prop).toInt()
+    val h = (imagem.height*prop).toInt()
+    frame.setSize(w, h + 24)
     val panel = object : JPanel() {
         override fun paintComponent(grafics: Graphics) {
-            grafics.drawImage(imagem, 0, 0, imagem.width, imagem.height, this)
+            grafics.drawImage(imagem.getScaledInstance(w, h, Image.SCALE_DEFAULT), 0, 0, null)
             super.paintComponents(grafics)
         }
     }
