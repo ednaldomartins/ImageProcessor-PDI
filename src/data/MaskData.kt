@@ -23,7 +23,7 @@ class MaskData {
             val bufferedReader: BufferedReader = inputStream.bufferedReader()
             //primeira linha = Largura X Altura
             val vSize = bufferedReader.readLine().toUpperCase().split('X')
-            val mask =  Array(vSize[0].toInt()) { FloatArray ( vSize[1].toInt() ) }
+            val mask =  Array(vSize[1].toInt()) { FloatArray (  vSize[0].toInt() ) }
             //linha a linha pegar os valores da matriz
             for (i in 0 until mask.size) {
                 val vLine = bufferedReader.readLine().split(' ')
