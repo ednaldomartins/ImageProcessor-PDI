@@ -2,19 +2,20 @@ import control.ImageProcessorController
 import model.*
 import view.showImage
 import java.util.*
+import kotlin.system.exitProcess
 
 fun main () {
+    val nomeArquivo = "gta.jpg"
     val imgController = ImageProcessorController()
     //nome do arquivo da imagem
-    imgController.loadImage("gta.jpg")
+    imgController.loadImage(nomeArquivo)
     //exibir imagem original
     showImage(imgController.bufferedImage)
 
     var x: Int
     val i = Scanner(System.`in`)
 
-    loop@ while (true){
-
+    while (true){
         println(
                 "1. Filtro Vermelhor\n" +
                 "2. Filtro Verde\n" +
@@ -30,12 +31,11 @@ fun main () {
                 "12. Media\n" +
                 "13. Mediana\n" +
                 "14. Sobel\n" +
-                "15. Recarregar Imagem\n" +
-                "16. Sair\n"
+                "15. Filtro Genérico\n" +
+                "16. Recarregar Imagem\n" +
+                "17. Sair\n"
         )
         x = i.nextInt()
-        //tempo inicial
-        //val time = System.currentTimeMillis()
         when (x) {
 
             1 -> imgController.processImage( RedFilter() )
@@ -77,9 +77,10 @@ fun main () {
                 val w = i.nextInt()
                 println("digite a altura da mascara")
                 val h = i.nextInt()
-                val averageFilter = AverageFilter( Array(w) { FloatArray (h) } )
+                val averageFilter = AverageFilter(Array(w) { FloatArray (h) })
                 println("aplicar Convolucao: 1 - Sim / n - Nao")
                 val b = i.nextInt()
+                //imgController.processImage(averageFilter)
                 if (b == 1) imgController.processImage( averageFilter, true ) else imgController.processImage(averageFilter)
             }
 
@@ -94,14 +95,18 @@ fun main () {
 
             14 -> imgController.processImage( Sobel() )
 
-            15 -> imgController.loadImage("gta.jpeg")
+            15 -> {
+                val genericFilter = GenericFilter()
+                println("aplicar Convolucao: 1 - Sim / n - Nao")
+                val b = i.nextInt()
+                if (b == 1) imgController.processImage( genericFilter, true ) else imgController.processImage(genericFilter)
+            }
 
-            16 -> break@loop
+            16 -> imgController.loadImage(nomeArquivo)
+
+            17 -> exitProcess(1)
 
         }
-        //tempo de execucao
-        //println("\n ${System.currentTimeMillis() - time} milissegundos.\n\n")
-        //exibir resultado do filtro aplicado na imagem
         showImage(imgController.bufferedImage)
     }
 }

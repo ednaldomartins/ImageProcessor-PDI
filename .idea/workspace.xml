@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e15bc31f-c648-48a2-8e84-5f0acb663c01" name="Default Changelist" comment="não parar execução quando fechar janela e usar variável única pra todo o programa.">
-      <change afterPath="$PROJECT_DIR$/in/images/gta.jpeg" afterDir="false" />
+    <list default="true" id="e15bc31f-c648-48a2-8e84-5f0acb663c01" name="Default Changelist" comment="Padr">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/control/ImageProcessorController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/control/ImageProcessorController.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/GenericFilter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/GenericFilter.kt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -86,55 +87,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1563364998572</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Classe criada para carregar imagem, e salvar resultados da edição. O método para carregar a imagem foi criado.">
-      <created>1563719655790</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1563719655790</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Classe responsável por exibir a imagem. O método de exibir a imagem deve receber um BufferedImage.">
-      <created>1563719808346</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1563719808346</updated>
-    </task>
-    <task id="LOCAL-00015" summary="att de 20 de julho.">
-      <created>1563719852505</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1563719852505</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Interface para implementação dos filtros.">
-      <created>1563818811902</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1563818811917</updated>
-    </task>
-    <task id="LOCAL-00017" summary="Classe controladora. versão de testes.">
-      <created>1563818846908</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1563818846910</updated>
-    </task>
-    <task id="LOCAL-00018" summary="Primeiro filtro para testes. O filtro mantém apenas a cor verde contida na imagem.">
-      <created>1563819655595</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1563819655595</updated>
-    </task>
-    <task id="LOCAL-00019" summary="Primeiro teste de filtro.">
-      <created>1563819714265</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1563819714266</updated>
     </task>
     <task id="LOCAL-00020" summary="workspace.">
       <created>1563819730695</created>
@@ -430,7 +382,56 @@
       <option name="project" value="LOCAL" />
       <updated>1565149672071</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="novas chamadas de métodos para o menu.">
+      <created>1565150021708</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1565150021709</updated>
+    </task>
+    <task id="LOCAL-00063" summary="Correção na cor vermelha.">
+      <created>1565203782130</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1565203782131</updated>
+    </task>
+    <task id="LOCAL-00064" summary="Filtro genérico para receber qualquer máscara.">
+      <created>1565204178056</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1565204178056</updated>
+    </task>
+    <task id="LOCAL-00065" summary="Reduzir imagens acima de 600p de altura.">
+      <created>1565204345413</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1565204345413</updated>
+    </task>
+    <task id="LOCAL-00066" summary="Correção no for.">
+      <created>1565204384895</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1565204384895</updated>
+    </task>
+    <task id="LOCAL-00067" summary="Correção na criação do vetor da máscara.">
+      <created>1565204423193</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1565204423193</updated>
+    </task>
+    <task id="LOCAL-00068" summary="Criação e remoção de arquivos.">
+      <created>1565204541281</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1565204541281</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -450,13 +451,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="Classe criada para ler arquivo txt para receber a mascara." />
-    <MESSAGE value="Local das imagens adicionado para que o método loadImage receba apenas o nome do arquivo." />
-    <MESSAGE value="O método foi alterado para receber uma máscara de tamanho genérico ímpar. ainda é preciso alterar o pivo quando a máscara é de tamanho par." />
-    <MESSAGE value="teste com MaskData()." />
-    <MESSAGE value="Novos filtros de média." />
-    <MESSAGE value="redução de código." />
-    <MESSAGE value="Conversor. Método para converter de RGB para YIQ." />
     <MESSAGE value="Separação de obrigações das classes. Classe Extension deve executar operações de extensões de matriz." />
     <MESSAGE value="Classe para converter do sistema RGB para YIQ, e YIQ para RGB." />
     <MESSAGE value="Filtro negativo no sistema YIQ." />
@@ -475,7 +469,14 @@
     <MESSAGE value="Renomeando e correção na posicao do vetor." />
     <MESSAGE value="não parar execução quando fechar janela." />
     <MESSAGE value="Os filtros estão recebendo a entrada pelo menu." />
-    <option name="LAST_COMMIT_MESSAGE" value="Os filtros estão recebendo a entrada pelo menu." />
+    <MESSAGE value="novas chamadas de métodos para o menu." />
+    <MESSAGE value="Correção na cor vermelha." />
+    <MESSAGE value="Filtro genérico para receber qualquer máscara." />
+    <MESSAGE value="Reduzir imagens acima de 600p de altura." />
+    <MESSAGE value="Correção no for." />
+    <MESSAGE value="Correção na criação do vetor da máscara." />
+    <MESSAGE value="Criação e remoção de arquivos." />
+    <option name="LAST_COMMIT_MESSAGE" value="Criação e remoção de arquivos." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -490,27 +491,31 @@
           <line>17</line>
           <option name="timeStamp" value="25" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/util/Extension.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="24" />
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/Main.kt</url>
+          <line>82</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/Main.kt</url>
+          <line>52</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/model/NegativeFilter.kt</url>
+          <line>18</line>
+          <option name="timeStamp" value="35" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="JetRunConfigurationType">
         <watch expression="mask" />
+        <watch expression="print(255-bufferedImage.getRGB(i,j)).red)" language="kotlin" />
+        <watch expression="var r = 255-bufferedImage.getRGB(i,j)).red" language="kotlin" />
+        <watch expression="var x = Color(255-bufferedImage.getRGB(i,j)).red" language="kotlin" />
       </configuration>
     </watches-manager>
-  </component>
-  <component name="debuggerHistoryManager">
-    <expressions id="watch">
-      <expression>
-        <expression-string>var f = File(&quot;..\\imagens\\lena256color.jpg&quot;)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-    </expressions>
   </component>
   <component name="masterDetails">
     <states>
